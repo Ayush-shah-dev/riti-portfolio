@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f5f0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-8 max-w-7xl;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-accent text-white font-medium rounded-md transition-all hover:bg-accent-dark;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-accent text-accent font-medium rounded-md transition-all hover:bg-accent hover:text-white;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-primary mb-8 relative;
+  }
+  
+  .section-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-16 h-1 bg-accent -mb-2;
+  }
+  
+  .skill-bar {
+    @apply h-2 rounded-full bg-secondary/20 overflow-hidden my-2;
+  }
+  
+  .skill-progress {
+    @apply h-full rounded-full bg-accent;
+  }
+}
+
+/* Custom animations */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
