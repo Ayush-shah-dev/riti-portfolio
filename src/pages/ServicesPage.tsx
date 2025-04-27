@@ -148,7 +148,7 @@ const ServicesPage: React.FC = () => {
             <p className="text-lg italic text-secondary mb-6">
               "Riti's strategic approach to social media has transformed our online presence completely. Her attention to detail and understanding of our brand voice is exceptional."
             </p>
-            <p className="font-medium">- Client Name, Company</p>
+            <p className="font-medium">- Ayush Shah</p>
           </div>
         </div>
 

@@ -1,12 +1,16 @@
 import React from 'react';
 import { Instagram, ExternalLink } from 'lucide-react';
+import serenityImage from './serenity.jpg'; // Adjust the path as needed
+import cobrewImage from './cobrew.png'; // Adjust the path as needed
+import omImage from './om logo.png'; // Adjust the path as needed
+
 
 const projects = [
   {
     id: 1,
     title: 'Serenity Mehendi',
     description: 'Social media management for Serenity Mehendi, building brand awareness and client outreach.',
-    image: 'https://images.pexels.com/photos/1926620/pexels-photo-1926620.jpeg',
+    image: {serenityImage},
     instagramUrl: 'https://www.instagram.com/serenity.mehendi/',
     instagramHandle: '@serenity.mehendi',
     highlights: [
@@ -20,7 +24,7 @@ const projects = [
     id: 2,
     title: 'Co-Brew',
     description: 'Digital marketing and social media strategy for Co-Brew, an innovative coffee shop.',
-    image: 'https://images.pexels.com/photos/4350039/pexels-photo-4350039.jpeg',
+    image: {cobrewImage},
     instagramUrl: 'https://www.instagram.com/cobrew2025/',
     instagramHandle: '@cobrew2025',
     highlights: [
@@ -34,7 +38,7 @@ const projects = [
     id: 3,
     title: 'OM Traders Shrinkfilms',
     description: 'B2B social media strategy and content creation for industrial product marketing.',
-    image: 'https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg',
+    image: {omImage},
     instagramUrl: 'https://www.instagram.com/omtraders_shrinkfilms/',
     instagramHandle: '@omtraders_shrinkfilms',
     highlights: [
