@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import serenityImage from './serenity.jpg'; // Adjust the path as needed
+import cobrewImage from './cobrew.png'; // Adjust the path as needed
+import omImage from './om logo.png'; // Adjust the path as needed
+
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -194,7 +198,7 @@ const ContactPage: React.FC = () => {
                 >
                   <div className="w-12 h-12 bg-neutral-100 rounded-full overflow-hidden mr-4">
                     <img
-                      src="https://images.pexels.com/photos/1926620/pexels-photo-1926620.jpeg"
+                      src= {serenityImage}
                       alt="Serenity Mehendi"
                       className="w-full h-full object-cover"
                     />
@@ -213,7 +217,7 @@ const ContactPage: React.FC = () => {
                 >
                   <div className="w-12 h-12 bg-neutral-100 rounded-full overflow-hidden mr-4">
                     <img
-                      src="https://images.pexels.com/photos/4350039/pexels-photo-4350039.jpeg"
+                      src={cobrewImage}
                       alt="Co-Brew"
                       className="w-full h-full object-cover"
                     />
@@ -232,7 +236,7 @@ const ContactPage: React.FC = () => {
                 >
                   <div className="w-12 h-12 bg-neutral-100 rounded-full overflow-hidden mr-4">
                     <img
-                      src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg"
+                      src={omImage}
                       alt="OM Traders Shrinkfilms"
                       className="w-full h-full object-cover"
                     />
