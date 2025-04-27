@@ -4,13 +4,12 @@ import serenityImage from './serenity.jpg'; // Adjust the path as needed
 import cobrewImage from './cobrew.png'; // Adjust the path as needed
 import omImage from './om logo.png'; // Adjust the path as needed
 
-
 const projects = [
   {
     id: 1,
     title: 'Serenity Mehendi',
     description: 'Social media management for Serenity Mehendi, building brand awareness and client outreach.',
-    image: {serenityImage},
+    image: serenityImage,
     instagramUrl: 'https://www.instagram.com/serenity.mehendi/',
     instagramHandle: '@serenity.mehendi',
     highlights: [
@@ -24,7 +23,7 @@ const projects = [
     id: 2,
     title: 'Co-Brew',
     description: 'Digital marketing and social media strategy for Co-Brew, an innovative coffee shop.',
-    image: {cobrewImage},
+    image: cobrewImage,
     instagramUrl: 'https://www.instagram.com/cobrew2025/',
     instagramHandle: '@cobrew2025',
     highlights: [
@@ -38,7 +37,7 @@ const projects = [
     id: 3,
     title: 'OM Traders Shrinkfilms',
     description: 'B2B social media strategy and content creation for industrial product marketing.',
-    image: {omImage},
+    image: omImage,
     instagramUrl: 'https://www.instagram.com/omtraders_shrinkfilms/',
     instagramHandle: '@omtraders_shrinkfilms',
     highlights: [
@@ -110,23 +109,6 @@ const PortfolioPage: React.FC = () => {
                   </a>
                 </div>
               </div>
-              
-              {project.id !== 3 && (
-                <div className="py-8 px-8 border-t border-neutral-100">
-                  <h3 className="font-medium mb-4">Campaign Gallery</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {Array.from({ length: 4 }).map((_, index) => (
-                      <div key={index} className="aspect-square rounded-md overflow-hidden bg-neutral-100">
-                        <img 
-                          src={`https://picsum.photos/500/500?random=${project.id}${index}`} 
-                          alt={`${project.title} campaign ${index + 1}`} 
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           ))}
         </div>
